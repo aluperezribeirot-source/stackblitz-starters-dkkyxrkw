@@ -1,119 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Mundial 2026</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <header>
-      <div id="logos">
-        <div id="fifa">
-          <img
-            src="https://digitalhub.fifa.com/transform/befe3a64-328b-453c-8b58-0faeb9103684/FIFA_Logo_White_Generic?&io=transform:fill&quality=75"
-            alt="fifa"
-          />
-        </div>
-        <div id="copa">
-          <img
-            src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill,height:210&quality=75"
-            alt="copa"
-          />
-        </div>
-      </div>
-    </header>
-    <nav>
-      <a href="index.html" class="activo">Fifa</a>
-      <a href="campeones.html">Campeones</a>
-      <a href="selecciones.html">Selecciones</a>
-      <a href="estadios.html">Estadios</a>
-      <a href="entradas.html">Entradas</a>
-    </nav>
-    <main>
-      <section id="intro">
-       <div id="eeuu">
-       </div>
-       <div id="mx">
-       </div>
-       <div id="can">
-       </div>
-      </section>
-      <section>
-      <iframe width="696" height="391" src="https://www.youtube.com/embed/RDtdVQgB9ME" title="es OFICIAL! Nueva Intro para la Copa del Mundo 2026 | +HD 60fps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </section>
-      <section>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTXbOimjZlE5vAbKY6k-fGlrVIC__HgKGA9V-i0whzjbQW_JcgS9aqFxFutoXJVri9GfVJP0uVll-bE/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="696" height="391" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> </section>
-     <section class="multimedia">
-      <audio controls>
-        <source src="audio/johnnybacon156-fah-469417.mp3">
-      </audio>
-       <video controls>
-        <source src="videos/The Official FIFA World Cup 26™ Theme.mp4">
-       </video>
 
-     </section>
-    
-    
-    
-    </main>
-    <footer>
-      <div id="colegio">
-        <h3>Colegio:</h3>
-        <p>
-          <a
-            href="https://www.stmary.edu.ar/es/como-llegar-pilar-sede-pilar"
-            target="_blank"
-            >Saint Mary of the Hills</a
-          >
-        </p>
+* {
+  box-sizing: border-box; /* El tamaño total incluirá el padding y el borde */
+}
 
-        <p>Dirección: Av. Parque, B1631 Zelaya, Provincia de Buenos Aires</p>
-      </div>
-      <div id="alumno">
-        <h3>Alumna:</h3>
-        <p><a href="mailto:alu.riverom@stmary.edu.ar">María Paz Rivero</a></p>
-        <p>Curso: 2° M</p>
-      </div>
-      <div id="sociales">
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE1ejXa19i3kleCu5O5rQ7nDVv1IpV-c_DMg&s"
-            alt="red instagram"
-          />
-        </a>
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
 
-        <a
-          href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"
-          target="_blank"
-          ><img
-            src="https://z-m-static.xx.fbcdn.net/rsrc.php/yt/r/DUiOg0mJTjz.webp"
-            alt="red facebook"
-          />
-        </a>
+/* Inicio del header */
+header {
+  background-color: black;
+}
 
-        <a href="https://x.com/?lang=es" target="_blank"
-          ><img
-            src="https://img.freepik.com/vector-gratis/aplicacion-twitter-nuevo-logotipo-x-sobre-fondo-negro_1017-45425.jpg?semt=ais_hybrid&w=740&q=80"
-            alt="red twitter"
-          />
-        </a>
+#logos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
 
-        <a href="https://www.threads.com/?hl=es-la" target="_blank"
-          ><img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/db/Threads_%28app%29.png"
-            alt="red threads"
-          />
-        </a>
+#copa img {
+  width: 100px;
+}
 
-        <a href="https://www.reddit.com/" target="_blank"
-          ><img
-            src="https://store-images.s-microsoft.com/image/apps.15970.14375561300249796.05fe8c27-ce9e-4144-8702-0e81e2f575b1.042364cb-b745-4796-a520-61291e2dd6b9"
-            alt="red reddit"
-          />
-        </a>
-      </div>
-    </footer>
-  </body>
-</html>
+#fifa img {
+  width: 191px;
+}
+/* Fin del header */
+
+/* Inicio nav */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: #eee;
+  text-transform: uppercase;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+}
+
+/* CORREGIDO: Se quitó el espacio para que aplique correctamente al enlace activo */
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+
+.activo {
+  box-shadow: 5px 5px lightgray;
+}
+/* Fin nav */
+
+/* Inicio main */
+section {
+  max-width: 1000px; /* Mejorado para que sea adaptativo en pantallas chicas */
+  width: 100%;
+  background-color: thistle;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section div {
+  width: 300px;
+  height: 170px;
+  background-color: yellow;
+  margin: 5px;
+}
+
+#intro {
+  background-image: url(https://i.pinimg.com/736x/be/47/74/be47743249f0e88d93da0e17520681fd.jpg);
+  box-shadow: 5px 3px gray;
+  border-radius: 15px;
+}
+
+/* CORREGIDO: Rutas con comillas por los espacios y Canadá cambiado a .png */
+#eeuu {
+  background-image: url('../img/bandera eeuu.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mx {
+  background-image: url('../img/bandera mex.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#can {
+  background-image: url('../img/bandera can.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Fin main */
+
+/* Comienzo de estadios */
+/* CORREGIDO: Se cambió 'background-color' por 'border' para la sintaxis solid red */
+table, td, th {
+  border: 8px solid red;
+}
+
+/* Inicio del footer */
+footer {
+  background-color: #000;
+  color: #d4d4d4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#colegio {
+  width: 33%;
+  background-color: red;
+  padding: 5px;
+}
+
+#colegio a {
+  color: #d4d4d4;
+}
+
+#alumno {
+  width: 33%;
+  background-color: yellow;
+  color: #aaa;
+  padding: 5px;
+}
+
+#alumno a {
+  color: #aaa;
+}
+
+#sociales {
+  width: 33%;
+  background-color: lightblue;
+  padding: 5px;
+}
+
+#sociales img {
+  width: 45px;
+}
+/* Fin del footer */
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.multimedia {
+  width: 800px;
+  background-color: plum;
+}
+
+.multimedia video {
+  width: 600px;
+}
+
+/* Estadios individuales */
+#estadosunidos, #estadosunidos tr, #estadosunidos td, #estadosunidos th {
+  border: solid plum 3px;
+  border-collapse: collapse;
+}
+
+#estadosunidos img {
+  width: 200px;
+}
+
+#canada, #canada tr, #canada td, #canada th {
+  border: solid plum 3px;
+  border-collapse: collapse;
+}
+
+#canada img {
+  width: 200px;
+}
+
+#mexico, #mexico tr, #mexico td, #mexico th {
+  border: solid plum 3px;
+  border-collapse: collapse;
+}
+
+#mexico img {
+  width: 200px;
+}
+ 
+ 
