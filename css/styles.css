@@ -172,7 +172,9 @@ h1 {
 /****** /* Contenedor principal: Divide el diseño en dos columnas (Continente y Paises) */
 .campeones{
   display: grid;
-  grid-template-columns: 1fr 3fr;/* 25% para continente, 25% para paise */
+  grid-template-columns: 1fr 3fr;/* 25% para continente, 75% para paises */
+  border: 2px solid #000;
+width: 100%;
 }
 /*Columna Izquierda: Continuamente ocupará todo el alto disponible automaticamente*/
   .continente{
