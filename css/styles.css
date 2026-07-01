@@ -121,37 +121,41 @@ th {
 }
 
 /*inicio del footer*/
-footer {
-  background-color: #000;
-  color: #d4d4d4;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 #colegio {
   width: 33%;
   background-color: red;
   padding: 5px;
-}
-
-#alumno {
+ }
+ 
+ 
+ #colegio a {
+  color: #d4d4d4;
+ }
+ 
+ 
+ #alumno {
   width: 33%;
   background-color: yellow;
   color: #aaa;
   padding: 5px;
-}
-
-#redes {
+ }
+ 
+ 
+ #alumno a {
+  color: #aaa;
+ }
+ 
+ 
+ #sociales {
   width: 33%;
   background-color: lightblue;
   padding: 5px;
-}
-
-#redes img {
-  width: 50px;
-}
-
+ }
+ 
+ 
+ #sociales img {
+  width: 45px;
+ }
 /*fin del footer*/
 main {
   padding: 1rem;
