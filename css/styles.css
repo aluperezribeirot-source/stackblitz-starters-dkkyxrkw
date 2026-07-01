@@ -1,6 +1,6 @@
-
 * {
-  box-sizing: border-box; /* El tamaño total incluirá el padding y el borde */
+  box-sizing: border-box;
+  /*se ajusta al tamño del contenedor*/
 }
 
 body {
@@ -10,9 +10,8 @@ body {
   background-color: white;
 }
 
-/* Inicio del header */
 header {
-  background-color: black;
+  background-color: #000;
 }
 
 #logos {
@@ -29,9 +28,9 @@ header {
 #fifa img {
   width: 191px;
 }
-/* Fin del header */
 
-/* Inicio nav */
+/*fin del header*/
+/*comienzo del nav*/
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -55,22 +54,22 @@ nav a {
   color: #555;
 }
 
-/* CORREGIDO: Se quitó el espacio para que aplique correctamente al enlace activo */
 nav a[aria-current='page'] {
   color: #000;
   background-color: #d4d4d4;
 }
 
 .activo {
+  border-bottom: 5px solid rgb(105, 43, 43);
   box-shadow: 5px 5px lightgray;
 }
-/* Fin nav */
 
-/* Inicio main */
+/*fin del nav*/
+/*inicio main*/
 section {
-  max-width: 1000px; /* Mejorado para que sea adaptativo en pantallas chicas */
-  width: 100%;
-  background-color: thistle;
+  width: 900px;
+  height: 600px;
+  background-color: red;
   margin: 0 auto;
   margin-bottom: 5px;
   display: flex;
@@ -82,44 +81,46 @@ section {
 section div {
   width: 300px;
   height: 170px;
-  background-color: yellow;
+  background-color: rgb(90, 20, 20);
   margin: 5px;
 }
 
 #intro {
-  background-image: url(https://i.pinimg.com/736x/be/47/74/be47743249f0e88d93da0e17520681fd.jpg);
-  box-shadow: 5px 3px gray;
+  box-shadow: 7px 5px;
   border-radius: 15px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMMOyeLQIlES7G2Bah7s3LlYUsC6FZB3uBQ&s)
 }
 
-/* CORREGIDO: Rutas con comillas por los espacios y Canadá cambiado a .png */
 #eeuu {
-  background-image: url('../img/bandera eeuu.png');
-  background-repeat: no-repeat;
+  background-image: url(../img/banderaeeuu.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #mx {
-  background-image: url('../img/bandera mex.png');
-  background-repeat: no-repeat;
+  background-image: url(../img/banderamx.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #can {
-  background-image: url('../img/bandera can.png');
-  background-repeat: no-repeat;
+  background-image: url(../img/banderacan.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
-/* Fin main */
 
-/* Comienzo de estadios */
-/* CORREGIDO: Se cambió 'background-color' por 'border' para la sintaxis solid red */
-table, td, th {
-  border: 8px solid red;
+/*fin main*/
+/*Comienzo de estadios*/
+table,
+td,
+th {
+  background-color: rgb(33, 4, 4) 8px solid;
 }
 
-/* Inicio del footer */
+/*inicio del footer*/
 footer {
   background-color: #000;
   color: #d4d4d4;
@@ -134,10 +135,6 @@ footer {
   padding: 5px;
 }
 
-#colegio a {
-  color: #d4d4d4;
-}
-
 #alumno {
   width: 33%;
   background-color: yellow;
@@ -145,21 +142,17 @@ footer {
   padding: 5px;
 }
 
-#alumno a {
-  color: #aaa;
-}
-
-#sociales {
+#redes {
   width: 33%;
   background-color: lightblue;
   padding: 5px;
 }
 
-#sociales img {
-  width: 45px;
+#redes img {
+  width: 50px;
 }
-/* Fin del footer */
 
+/*fin del footer*/
 main {
   padding: 1rem;
 }
@@ -168,85 +161,94 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
-/*campeones******/
+/*campeones********/
 /****** /* Contenedor principal: Divide el diseño en dos columnas (Continente y Paises) */
-.campeones{
-  display: grid;
-  grid-template-columns: 1fr 3fr;/* 25% para continente, 75% para paises */
-  border: 2px solid #000;
+.campeones {
+display: grid;
+grid-template-columns: 1fr 3fr; /*25% para continente, 75% para paises */
+border: 2px solid #000;
 width: 100%;
 }
-/*Columna Izquierda: Continuamente ocupará todo el alto disponible automaticamente*/
-  .continente{
-  border-right: 2px solid black;
+/* Columna Izquierda: Continente ocupará todo el alto disponible atomaticamente */
+.continente {
+  border-right: 2px solid #000;
   padding: 15px 10px;
-font-weight: bold;
+  font-weight: bold;
   font-size: 14px;
-  }
-/*Columna Derecha: Se convierte en otro Grid para organizar el contenido interno */
-.paises{
-display: grid;
-grid-template-columns: 1fr 1fr; /*Divididoen 2 columnas para las fotos */
 }
-/* El titulo del Pais ocupa las dos columnas */
-.pais{
+/* Columna Derecha: Se convierte en otro Grid para organizar el contenido interno */
+.paises {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*Divido en 2 columnas para las fotos */
+}
+/* El título del País ocupa las dos columnas */
+.pais {
   grid-column: span 2;
   padding: 10px;
   font-weight: bold;
   font-size: 13px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000;
 }
+
 /* Las fotos se acomodan una al lado de la otra automaticamente (50% cada una) */
-.foto{
-  min-height: 120px; /* espacio para la imagen*/
-  padding: 35px 10px 10px;
+.foto {
+  min-height: 120px; /*Espacio para la imagen */
+  padding: 35px 10px 10px 10px;
   font-size: 11px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000;
 }
-/*Borde vertical divisor solo en la primera foto*/
-.foto:nth-of-type(odd){
-  border-right: 2px solid black;
+
+/* Borde vertical divisor solo en la primera foto */
+.foto:nth_of_type(odd) {
+  border-right: 2px solid #000;
 }
-/* La resenia se salta al fondo ocupando las dos columnas */
-.resenia{
+
+/* La reseña se salta al fondo ocupando las dos columnas */
+.resenia {
   grid-column: span 2;
+  padding: 10px;
+  min-height: 80px;
+  font-size: 11px;
+}
+/*datos de campeones*/
+.paises .foto img{
+  width: 100%;
+}
+.resenia p{
+  font-size: 16px;
 }
 
-.multimedia {
+.multimedia{
   width: 800px;
-  background-color: plum;
+  background-color: #000;
 }
-
-.multimedia video {
+.multimedia video{
   width: 600px;
 }
 
-/* Estadios individuales */
-#estadosunidos, #estadosunidos tr, #estadosunidos td, #estadosunidos th {
-  border: solid plum 3px;
+/*estadios*/
+
+#estadosunidos, #estadosunidos tr, #estadosunidos td, #estadosunidos th{
+  border: solid crimson 3px;
   border-collapse: collapse;
 }
-
-#estadosunidos img {
+#estadosunidos img{
   width: 200px;
 }
 
-#canada, #canada tr, #canada td, #canada th {
-  border: solid plum 3px;
+#canada, #canada tr, #canada td, #canada th{
+  border: solid crimson 3px;
   border-collapse: collapse;
 }
-
-#canada img {
+#canada img{
   width: 200px;
 }
 
-#mexico, #mexico tr, #mexico td, #mexico th {
-  border: solid plum 3px;
+#mexico, #mexico tr, #mexico td, #mexico th{
+  border: solid crimson 3px;
   border-collapse: collapse;
 }
-
-#mexico img {
+#mexico img{
   width: 200px;
 }
- 
- 
+
