@@ -169,6 +169,7 @@ h1 {
   font-size: 1.5rem;
 }
 /*campeones******/
+/****** /* Contenedor principal: Divide el diseño en dos columnas (Continente y Paises) */
 .campeones{
   display: grid;
   grid-template-columns: 1fr 3fr;/* 25% para continente, 25% para paise */
