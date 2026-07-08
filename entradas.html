@@ -31,7 +31,38 @@
      <a href="entradas.html" class="activo">Entradas</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+    <h2>Encuesta o datos de las entradas</h2>
+    <p>Ingrese sus datos para realizar la reserva de la entrada</p>
+    <section>
+      <div id="formulario">
+        <h2>Tus datos</h2>
+        <form action="#">
+          <label for="formnombre">Nombre</label>
+          <input type="text" name="formnombre" id="formnombre" maxlength="30" minlength="5" required placeholder="Ingrese su nombre">
+
+          <label for="formapellido">Apellido</label>
+          <input type="text" name="formapellido" id="formapellido" maxlength="30" minlength="3" required placeholder="Ingrese su apellido">
+          <input id="formedad" required type="number" placeholder="Ingrese su edad">
+          <input id="formclave" required type="password" placeholder="Ingrese la palabra secreta">
+          <input type="email" placeholder="correo@gmail.com.ar">
+
+          <input type="radio" id="formf" name="formsexo" value="Femenino">
+          <label for="fem">Femenino</label>
+<input type="radio" id="formf" name="formsexo" value="Masculino">
+          <label for="fem">Masculino</label>
+          <input type="radio" id="formf" name="formsexo" value="Nodecirlo">
+          <label for="fem">No informo</label><br> <br>
+          <label for="ubicacion">Seleccione una ubicacion</label><br>
+          <select name="ubicacion" id="formubi">
+            
+          </select>
+
+         
+
+        </form>
+      </div>
+    </section>
+      
     </main>
   <footer>
 <div id="colegio"> 
