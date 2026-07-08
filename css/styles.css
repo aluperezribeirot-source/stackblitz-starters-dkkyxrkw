@@ -248,7 +248,14 @@
 .resenia p{
   font-size: 16px;
 }
+/************entradas***************************/
+#formulario{
+width: 500px;
+height: 800px;
+float: left;
 
+
+}
  .multimedia {
   width: 800px;
   background-color: plum;
